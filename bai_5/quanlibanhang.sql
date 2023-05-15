@@ -24,6 +24,12 @@ select * from Products
 end //
 DELIMITER;
 
+delimitter //
+create procedure addproduct()
+begin
+select * from Products
+end //
+DELIMITER;
 
 
 
