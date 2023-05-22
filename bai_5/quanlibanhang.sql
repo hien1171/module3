@@ -10,26 +10,31 @@ productAmount int,
 productDescription varchar(50),
 productStatus bit);
 
-alter table Products add index uniqueIndex(productCode);
+alter table Products add unique index uniqueIndex(productCode);d
  alter table Products add index compositeIndex(productName,productPrice);
 
 create view productView as
 select productName, productPrice
 from Products;
 
-delimitter //
+delimiter //
 create procedure getInfor()
 begin
-select * from Products
+select * from Products;
 end //
-DELIMITER;
+delimiter;
 
-delimitter //
-create procedure addproduct()
-begin
-select * from Products
-end //
-DELIMITER;
+
+
+
+
+
+call getInfor();
+
+
+delimite//
+
+
 
 
 
