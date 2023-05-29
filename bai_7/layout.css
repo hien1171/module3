@@ -1,0 +1,47 @@
+.container{
+    height: 500px;
+}
+
+.header{
+    align-items: center;
+    background:#7952b3;
+    height: 10%;
+}
+.footer{
+    background:#d3d6d8;
+    height: 10%;
+}
+.navbar{
+    position: fixed;
+}
+.left{
+    background:#d3d6d8;
+    border:1px solid #7952b3;
+    padding-left: 10px;
+}
+.right{
+    border:1px solid #7952b3;
+}
+.center{
+    background: #7abaff;
+}
+.row{
+    /*cho phép thẻ div (col) nổi lên trên*/
+    display: flex;
+    /*Các thẻ div (col)  không đủ chỗ chứa trên 1 hàng thì rớt xuống*/
+    flex-wrap: wrap;
+}
+@media only screen {
+    .col-m-1 {width: 8.33333%;}
+    .col-m-2 {width: 16.66667%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33333%;}
+    .col-m-5 {width: 41.66667%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33333%;}
+    .col-m-8 {width: 66.66667%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33333%;}
+    .col-m-11 {width: 91.66667%;}
+    .col-m-12 {width: 100%;}
+}
